@@ -1,0 +1,171 @@
+@import '../../styles/variables.css';
+
+.about {
+  padding: 6rem 4rem;
+  background-color: var(--color-white);
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  text-align: center;
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.about h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: var(--color-secondary);
+}
+
+.about-content {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 400px;
+}
+
+.image-placeholder {
+  background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+  aspect-ratio: 3/4;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  font-size: 4rem;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.about-text {
+  flex: 1.5;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--color-text);
+  margin-bottom: 2rem;
+}
+
+.credentials {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.credential-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--color-light);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.credential-item:hover {
+  transform: translateX(10px);
+}
+
+.credential-icon {
+  font-size: 2rem;
+  color: var(--color-secondary);
+}
+
+.credential-item h4 {
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.credential-item p {
+  color: var(--color-text);
+  font-size: 1rem;
+}
+
+.social-links {
+  margin-top: 2rem;
+}
+
+.linkedin-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #0077b5;
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.linkedin-button:hover {
+  background-color: #005885;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .about {
+    padding: 5rem 3rem;
+  }
+
+  .about-content {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 4rem 2rem;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .credential-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .credential-item:hover {
+    transform: translateY(-5px);
+  }
+} 

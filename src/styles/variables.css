@@ -1,0 +1,12 @@
+:root {
+  /* Colores principales */
+  --color-primary: #003366;    /* Azul Marino */
+  --color-secondary: #C9A66B;  /* Dorado Claro */
+  --color-light: #F5F5F5;      /* Gris Claro */
+  --color-white: #FFFFFF;      /* Blanco */
+  --color-text: #333333;       /* Negro Suave */
+
+  /* Tipografía */
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+} 
