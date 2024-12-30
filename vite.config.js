@@ -4,6 +4,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/alan-daud-enzenhofer/',
+  build: {
+    outDir: 'docs'
+  },
   css: {
     modules: false
   },
